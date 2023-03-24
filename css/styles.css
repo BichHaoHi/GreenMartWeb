@@ -15,10 +15,20 @@ body{
 
 /* ===========LOGO============== */
 .header{
-    position: relative;
+    position: relative 
+}
+header{
+    height: 100vh;
 }
 
-header .logo{
+.slide img{
+    width: 100%;
+   height: calc(100vh - 58px);
+   object-fit: cover;
+}
+
+
+header .logo{       
     font-weight: 400;
     font-size: 4.8rem;
     line-height: 1.19;
@@ -27,14 +37,14 @@ header .logo{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #D1EDE1;
 }
+
 header .navbar{
     width: 100%;
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 0;
-    /* background-color: red; */
-    border: 1px solid black;
+    top: 5px;
+    
 }
 header .info{
     display: flex;
@@ -73,4 +83,21 @@ header .info{
     width: 50px;
 }
 
+.dot{
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    right: 20px;
+    bottom: 7px;
+}
+
+.dot .next{
+    width: 15px;height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color:transparent;
+}
+.dot .active{
+    background-color: #fff;
+}
 
