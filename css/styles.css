@@ -119,7 +119,9 @@ header .info{
 .featured{
     margin-top: 99px;
     padding-top: 100px;
-    /* background-color: red; */
+}
+.hehe{
+    background-color: yellow;
 }
 .featured .title{
     font-family: 'Inter', sans-serif;
