@@ -7,27 +7,30 @@ html{
 body{
     font-family: 'Girassol', cursive;
 }
+html,
+body{
+    scroll-behavior: smooth;
+}
 
 /* ===========COMMON============ */
-
-
-
-
-/* ===========LOGO============== */
-.header{
-    position: relative 
+a{
+    text-decoration: none;
+    color: #000000;
 }
+a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+
+
+
+/* ===========HEADER============== */
 header{
-    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
-
-.slide img{
-    width: 100%;
-   height: calc(100vh - 58px);
-   object-fit: cover;
-}
-
-
 header .logo{       
     font-weight: 400;
     font-size: 4.8rem;
@@ -35,30 +38,22 @@ header .logo{
     text-align: center;
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #D1EDE1;
+    background-image: linear-gradient(#6FC5AE,#84CEBA5F,#91D4C200);
 }
-
 header .navbar{
     width: 100%;
     display: flex;
     justify-content: space-around;
+
+    /* ko có thẻ cha đc định vị nên định vị theo thẻ body->mất bố cục luồng->ảnh ở dưới */
     position: absolute;
-    top: 5px;
+    border: 1px solid #DFDFDF;
     
 }
+.navbar, .navbar a  {
+    padding: 7px 0;
+}
 header .info{
-    display: flex;
-    gap: 10px;
-    font-weight: 400;
-    font-size: 2.4rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-} 
-.header .products{
     display: flex;
     gap: 15px;
     font-weight: 400;
@@ -70,19 +65,38 @@ header .info{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
 } 
-.header .action{
+.sub-header .products{
+    display: flex;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+} 
+.sub-header .action{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.navbar li, .navbar .info div {
-    padding: 14px 0;
-} 
 .action .icon{
-    width: 50px;
+    width: 40px;
 }
+.background img{
+    width: 100%;
+   height: calc(100vh - 58px);
+   object-fit: cover;
+}
+ 
 
+/*--------------Lớp giả trên thanh navbar -------------- */
+
+
+/*--------------- DOT chuyển trang header --------------- */
 .dot{
     display: flex;
     gap: 7px;
@@ -100,4 +114,247 @@ header .info{
 .dot .active{
     background-color: #fff;
 }
+
+/* ==============TODAY's DEALS==================== */
+.featured{
+    margin-top: 99px;
+    padding-top: 100px;
+    /* background-color: red; */
+}
+.featured .title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    color: #6C6C6C;
+}
+.featured .products{
+    display: flex;
+    justify-content: center;    
+    gap: 15px;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+}
+.featured .img-block{
+    display: flex;
+    gap: 40px;
+    margin: 40px  60px 0;
+}
+.img-block .type , .img-block .price{
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.19;
+    text-align: center;
+    color: #000000;
+}
+.img-block .type{
+    margin-top: 20px;
+}
+.featured .btn{
+    max-width: 352px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #000000;
+    margin: 40px auto 0 ;
+    background: #BBCDCD;
+    border-radius: 20px;
+    line-height: 82px;
+
+
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn a{
+    /* line-height: 82px; */
+    padding: 0 53px;
+    text-decoration: none;
+}
+
+
+/* ===============BEST SELLER==================== */
+.best-seller {
+    margin-top: 111px;
+    position: relative;
+
+}
+.best-seller .row{
+    margin-top: 20px;
+    margin-left: 140px;
+    display: flex;
+}
+ .best-seller .info{
+    width: 40.5%;
+    margin-left: 30px;
+}
+
+.best-seller .title{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 36px;
+    text-align: center;
+    color: #504747;
+}
+
+.best-seller .type{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #504747;
+}
+
+.best-seller .price{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #6C6C6C;
+}
+hr{margin-top: 40px;
+}
+
+.best-seller .desc{
+    margin-top: 20px;
+}
+
+.best-seller .desc strong{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #020202;
+}
+.best-seller .desciption p, .quantity{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #6C6C6C;
+    margin-top: 20px;    
+}
+.buy{
+    position: absolute;
+    bottom: -55px;
+    right: 375px;
+}
+.buy button, .buy input{
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;  
+    height: 30px;
+}
+input {
+    text-align: center;
+    width: 100px;
+} 
+.quantity{
+    color: #000000;
+    font-size: 2.5rem;
+}
+.best-seller .btn{
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+    width: 150px;
+    color: #6C6C6C;
+    margin: 15px 0;
+}
+.best-seller .btn:hover{
+    background-color:#DFDFDF;
+}
+
+/* =============== FEEDBACK ==================== */
+.feedback .text{
+    margin-top: 221px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #504747;
+}
+.sub-feedback{
+    display: flex;
+}
+.feedback .img-block img{
+    width: 300px;
+    height: 300px;
+}
+.sub-feedback .img-block{
+    flex: 1;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+.sub-feedback .arrow-right{
+    display: flex;justify-content: center;align-items: center;
+    width: 50px;height: 50px;
+    border-radius: 50%;
+    border: 1px solid #DFDFDF;
+    margin-top: 185px;
+    /* margin-bottom: auto; */
+}
+.feedback .arrow-right:hover{
+    background-color: #DFDFDF;
+}
+
+.feedback .desc{
+    width: 300px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #6C6C6C;
+}
+
+/* =============== FOOTER ==================== */
+.footer .back{
+    margin-top: 84px;
+    padding: 8px 0;
+    display: block;
+    text-align: center;
+    background: #ACE7D5;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #000000;
+}
+.footer .back:hover{
+    text-decoration: none;
+    background: linear-gradient(180deg, #91D4C2 99.99%, rgba(145, 212, 194, 0) 100%);
+}
+.footer .column{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #91D4C2 99.99%, rgba(145, 212, 194, 0) 100%);
+    gap: 120px;
+    padding : 50px;
+
+}
+.footer .title{
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000000;
+
+}
+.footer .desc, .footer .desc li {
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 31px;
+    color: #6C6C6C;
+    margin-top: 20px;   
+}
+.footer .method + .method,
+.footer .social + .social
+{
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+
+
+
 
