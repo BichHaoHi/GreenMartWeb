@@ -7,15 +7,16 @@
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     color: #2C2929;
 }
-.desc{
+.content .desc{
+    font-family: 'Arial';
     margin-top: 34px;
-    font-weight: 400;
-    font-size: 2.9rem;
-    line-height: 1.2;
+    font-weight: 300;
+    font-size: 2.6rem;
+    line-height: 1.5;
     color: #000000;
 }
 .content .info{
@@ -29,5 +30,6 @@
     color: #6C6C6C;
 }
 .footer{
+    
     margin-top: 55px;
 }

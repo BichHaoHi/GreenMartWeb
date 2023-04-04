@@ -5,45 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
-    <!-- <script src="script.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="logo">GREENMART</div>
-        <div class="sub-header">
-            <div class="navbar">
+    <header >
+        <div class="logo" id="logo_1">GREENMART</div>
+
+        <div class="sub-header" >
+            <div class="navbar" id="navbar_1">
                 <ul class="info">
                         <li><a href="#">HOME</a></li>
                         <li><a href="./about-us.html">ABOUT US</a></li>
                 </ul>
                 <ul class="products">
-                    <li><a href="#!">FRESH MEAT</a></li>
-                    <li><a href="#!">FRESH SEAFOOD</a></li>
-                    <li><a href="#!">DIARY & EGGS</a></li>
-                    <li><a href="#!">FRESH FRUIT</a></li>
-                    <li><a href="#!">VEGETABLES</a></li>
+                    <li><a href="./fresh-meat.html">FRESH MEAT</a></li>
+                    <li><a href="./fresh-seafood.html">FRESH SEAFOOD</a></li>
+                    <li><a href="./eggs.html">DIARY & EGGS</a></li>
+                    <li><a href="./fresh-fruit.html">FRESH FRUIT</a></li>
+                    <li><a href="../vegetables.html">VEGETABLES</a></li>
                 </ul> 
         
                 <div class="action">
-                    <img src="./img/search.svg" alt="" class="">
+                    <img src="./img/search.png" alt="" class="icon" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <img src="./img/login.svg" alt="" class="icon login">
+                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
                 </div>
             </div>
         </div>
     </header>
+    <script src="./JS/index.js"></script>
 
-    <div class="hero">
+    <div class="hero" >
             <div class= "background">
                 <img src="./img/Background.svg" alt="">
             </div>
@@ -58,37 +65,25 @@
     
     <div class="featured">
         <p class="title">Today's Deals</p>
-        <ul class="products">
-            <li><a href="#!">FRESH MEAT</a>
-            </li>
-            <li><a href="#!">FRESH SEAFOOD</a>
-            </li>
-            <li><a href="#!">DIARY & EGGS</a>
-            </li>
-            <li><a href="#!">FRESH FRUIT</a>
-            </li>
-            <li><a href="#!">VEGETABLES</a>
-            </li>
-        </ul>
         <div class="img-block">
             <div class="info-price">
                 <img src="./img/meat_01.svg" alt="">
-                <div class="type">KOBE BEEF</div>
+                <h2 class="type">KOBE BEEF</h2>
                 <div class="price">$349.99</div>
             </div>
             <div class="info-price">
                 <img src="./img/meat_02.svg" alt="">
-                <div class="type">WAGYU BEEF</div>
+                <h2 class="type">WAGYU BEEF</h2>
                 <div class="price">$60.26</div>
             </div>
             <div class="info-price">
                 <img src="./img/meat_03.svg" alt="">
-                <div class="type">ORGANIC PORK</div>
+                <h2 class="type">ORGANIC PORK</h2>
                 <div class="price">$45.23</div>
             </div>
             <div class="info-price">
                 <img src="./img/meat_04.svg" alt="">
-                <div class="type">PORK CHOP</div>
+                <h2 class="type">PORK CHOP</h2>
                 <div class="price">$55.48</div>
             </div>
         </div>
@@ -129,10 +124,8 @@
                 
         </div>
         <div class="buy">
-            <div for="quantity" class="quantity"> <strong>Quantity:</strong> </div>
-            <button class="increase">+</button>
-            <input type="number" class="" name="quantity" value="1" min="1" max="">
-            <button class="decrease">-</button>
+            <div for="quantity" class="quantity"> <strong>Input quantity:</strong> </div>
+            <input type="number" class="" name="quantity" value="0" min="" max="">
             <div class="btn">ADD TO CART</div>
        </div>
     </div>
@@ -154,9 +147,7 @@
                 <img src="./img/ava_3.svg" alt="">
                 <div class="desc">“It’s a small space but packed full of western goodies you just can’t fine anywhere else.”</div>
             </div>
-            <div class="arrow-right">
-                <img src="/img/arrow-right.svg" alt="">
-            </div>
+            
         </div >
     </div>
 
@@ -192,5 +183,7 @@
             </div>
     </div>
     
+    
+
 </body>
 </html>
