@@ -21,20 +21,23 @@ h2.title{
 } 
 
 /* ===================FRESH-MEET-1============== */
+.product-01 {
+    margin-top: 90px;
+}
+
 .product-01 .row{
+    max-width: 70%;
     display: flex;
     margin-top: 90px;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
    
 }
 
-.product-01 {
-    margin-top: 111px;
-    position: relative;
-}
 .product-01 .info{
-    width: 581px;
-    margin-left: 30px;
+    position: relative;
+    max-width: 60%;
+    margin-left: auto;
 }
 
 
@@ -80,8 +83,8 @@ hr{margin-top: 20px;
 }
 .buy{
     position: absolute;
-    bottom: -128px;
-    right: 380px;
+    bottom: -100px;
+    left: -40px;
 }
 .buy button, .buy input{
     background: #FFFFFF;
@@ -108,7 +111,7 @@ input {
     color: #6C6C6C;
     margin: 15px 0;
     cursor: pointer;
-    margin: 10px 84px;
+    margin: 10px 84px 0 84px;
 
 }
 .product-01 .btn:hover{

@@ -23,6 +23,11 @@ a:hover{
     text-decoration: underline;
     opacity: 0.7;
 }
+a.GreenMart:hover{
+    text-decoration: none;
+    opacity: 0.6;
+
+}
 
 /* ===========HEADER============== */
 header{
@@ -122,10 +127,9 @@ header .info{
 .featured{
     margin-top: 99px;
     padding-top: 100px;
+    /* background-color: red; */
 }
-.hehe{
-    background-color: yellow;
-}
+
 .featured .title{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -143,9 +147,10 @@ header .info{
     margin-top: 20px;
 }
 .featured .img-block{
+    width: 90%;
     display: flex;
-    gap: 40px;
-    margin: 40px  60px 0;
+    justify-content: space-between;
+    margin:40px auto 0;
 }
 .img-block .type , .img-block .price{
     font-weight: 400;
@@ -184,17 +189,22 @@ header .info{
 /* ===============BEST SELLER==================== */
 .best-seller {
     margin-top: 111px;
-    position: relative;
+    /* background-color: red; */
 
 }
 .best-seller .row{
-    margin-top: 20px;
-    margin-left: 140px;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    justify-content: space-between;
 }
 .best-seller .info{
-    width: 40.5%;
-    margin-left: 30px;
+    width: 50%;
+    position: relative;
+    /* background-color: red; */
+
 }
 
 .best-seller .title{
@@ -240,8 +250,9 @@ hr{margin-top: 30px;
 
 .buy{
     position: absolute;
-    bottom: -30px;
-    right: 270px;
+    bottom: 0;
+    left: 0;
+    /* right: 390px; */
 }
 .buy button, .buy input{
     background: #FFFFFF;
@@ -270,7 +281,7 @@ input {
     text-align: center;
     width: 150px;
     color: #6C6C6C;
-    margin: 10px 84px;
+    margin: 10px 84px 0 84px;
 }
 .best-seller .btn:hover{
     background-color:#DFDFDF;
@@ -286,14 +297,13 @@ input {
 }
 .sub-feedback{
     display: flex;
+    justify-content: space-around;
 }
 .feedback .img-block img{
     width: 300px;
     height: 300px;
 }
 .sub-feedback .img-block{
-    flex: 1;
-    margin-left: 50px;
     margin-top: 50px;
     
 }
