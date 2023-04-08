@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./css/fresh-meat.css">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
@@ -21,7 +22,10 @@
 
 </head>
 <body>
+    
+
     <header >
+
         <div class="logo" id="logo_1"><a href="./index.html" class="GreenMart">GREENMART</a></div>
 
         <div class="sub-header" >
@@ -39,14 +43,19 @@
                 </ul> 
         
                 <div class="action">
-                    <img src="./img/search.png" alt="" class="icon" style="border-radius: 50%;">
+                    <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
                     <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
                 </div>
             </div>
+            <div class="input hidden ">
+                <form action="" class="form">
+                    <input type="text" placeholder="SEARCH..." class="input-text">
+                </form>
+            </div>
+             <div class="close hidden">close</div>
         </div>
     </header>
-    <script src="./JS/index.js"></script>
 
 
     <h2 class="title">FRESH MEAT</h2>
@@ -122,8 +131,9 @@
                 <img src="./img/social_03.svg" alt="" class="social">
             </div>
         </div>
-</div>
-
+    
+    </div>
+    <script src="./JS/index.js"></script>
 
 
 </body>

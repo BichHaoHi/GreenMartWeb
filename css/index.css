@@ -107,21 +107,20 @@ header .info{
 /*--------------- DOT chuyển trang header --------------- */
 .dot{
     display: flex;
+    /* display: none; */
     gap: 7px;
     position: absolute;
     right: 20px;
     bottom: 7px;
 }
 
-.dot .next{
-    width: 15px;height: 15px;
+.next{
+    width: 20px;height: 20px;
     border: 1px solid #fff;
     border-radius: 50%;
     background-color:transparent;
 }
-.dot .active{
-    background-color: #fff;
-}
+
 
 /* ==============TODAY's DEALS==================== */
 .featured{
@@ -375,6 +374,76 @@ input {
     margin-left: 17px;
 }
 
+.hero .background{
+    display: flex;
+    overflow: hidden;
+}
+
+.hero .background img{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* SLIDESHOW */
+.active{
+    background-color: #fff;
+}
+
+
+.background img {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+} 
+
+/* SEARCH BAR */
+.sub-header{
+    position: relative;
+}
+
+.input{
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 31px;
+    color: #6C6C6C;
+    width: 100%;
+    
+    position: absolute;
+    top: 56px;
+    background-color: #D9D9D9;
+    /* border-radius: 3px; */
+}
+.form{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.input-text{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    z-index: 10;
+}
+.input-text:focus {
+    outline: none;
+}
+
+.hidden{
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 68px;
+    right: 31px;
+    z-index: 11;
+    font-size: 2rem ;
+    color: #6C6C6C;
+}
+.close:hover{
+    cursor: pointer;
+}
 
 
 
