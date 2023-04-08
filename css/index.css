@@ -443,6 +443,7 @@ input {
 }
 .close:hover{
     cursor: pointer;
+    opacity: 0.6;
 }
 
 
