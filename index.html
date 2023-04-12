@@ -25,7 +25,6 @@
 
     <header >
         <div class="logo" id="logo_1"><a href="#" class="GreenMart">GREENMART</a></div>
-
         <div class="sub-header" >
             <div class="navbar" id="navbar_1">
                 <ul class="info">
@@ -43,7 +42,32 @@
                 <div class="action">
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <a href="login.html"><img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"></a>
+                    <!-- <a href="login.html"><img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"></a> -->
+                    <div class="click">
+                        <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
+                        <div class="profile hidden">
+                            <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                <p class="name">ten tai khoan</p>
+                            </div>
+                            <hr style="margin-top: 5px;">
+                            <a href="./login.html" class="hi">
+                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
+                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
+                                    <p class="name">Log In</p>
+                                </div>
+                            </a>
+                            <hr style="margin-top: 5px;">
+                            <a href="#" class="hi">
+                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
+                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
+                                    <p class="name">Log Out</p>
+                                </div>
+                            </a>
+                            <hr style="margin-top: 5px;">
+                                <p class="name name_click" style="text-align: center; font-size: 2.6rem;">close</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -79,28 +103,35 @@
     <div class="featured">
         <p class="title">Today's Deals</p>
         <div class="img-block">
-            <div class="info-price">
-                <img src="./img/meat_01.svg" alt="">
-                <h2 class="type">KOBE BEEF</h2>
-                <div class="price">$99.99</div>
-            </div>
-            <div class="info-price">
-                <img src="./img/meat_02.svg" alt="">
-                <h2 class="type">WAGYU BEEF</h2>
-                <div class="price">$60.26</div>
-            </div>
-            <div class="info-price">
-                <img src="./img/meat_03.svg" alt="">
-                <h2 class="type">ORGANIC PORK</h2>
-                <div class="price">$45.23</div>
-            </div>
-            <div class="info-price">
-                <img src="./img/meat_04.svg" alt="">
-                <h2 class="type">PORK CHOP</h2>
-                <div class="price">$55.48</div>
-            </div>
+            <a href="./fresh-meat-1.html">
+                <div class="info-price">
+                    <img src="./img/meat_01.svg" alt="">
+                    <h2 class="type">KOBE BEEF</h2>
+                    <div class="price">$99.99</div>
+                </div>
+            </a>
+            <a href="./fresh-meat-2.html">
+                <div class="info-price">
+                    <img src="./img/meat_02.svg" alt="">
+                    <h2 class="type">WAGYU BEEF</h2>
+                    <div class="price">$60.26</div>
+                </div>
+            </a>
+            <a href="./fresh-meat-3.html">
+                <div class="info-price">
+                    <img src="./img/meat_03.svg" alt="">
+                    <h2 class="type">ORGANIC PORK</h2>
+                    <div class="price">$45.23</div>
+                </div>
+            </a>
+            <a href="./fresh-meat-4.html">
+                <div class="info-price">
+                    <img src="./img/meat_04.svg" alt="">
+                    <h2 class="type">PORK CHOP</h2>
+                    <div class="price">$55.48</div>
+                </div>
+            </a>
         </div>
-        <div class="btn"><a href="#!">VIEW ALL PRODUCTS</a></div>
     </div>
 
     <div class="best-seller">
@@ -195,7 +226,7 @@
             </div>
     </div>
     <script src="./JS/index.js"></script>
-    <script src="./JS/slideshow.js"></script>
+    <!-- <script src="./JS/slideshow.js"></script> -->
 
     
     

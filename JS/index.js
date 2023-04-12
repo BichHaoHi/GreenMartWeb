@@ -62,7 +62,6 @@ window.addEventListener('scroll', function() {
     var navbar = document.getElementById("navbar_1").style
 
     search.addEventListener('click' , function(){
-      console.log(11111111);
 
     inputhihi.classList.remove('hidden')
       close.classList.remove('hidden')
@@ -78,6 +77,21 @@ window.addEventListener('scroll', function() {
       navbar.backgroundColor = "transparent";
 
     })
+
+
+    
+    // ===================== ICON LOGIN ========================
+    var click = document.querySelector('.click_icon')
+    var profile = document.querySelector('.profile')
+    var name_click = document.querySelector('.name_click')
+    
+    click.addEventListener('click', function(){
+      profile.classList.remove('hidden')
+    })
+    name_click.addEventListener('click', function(){
+      profile.classList.add('hidden')
+    })
+
 
 
 
