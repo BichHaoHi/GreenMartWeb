@@ -1,0 +1,45 @@
+.cart-img-block{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+.cart-img-block .image{
+    width: 300px;
+    height: 300px;
+}
+.cart-img-block .name, .name{
+    font-family: 'Girassol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 24px;
+    color: #858585;
+}
+.cart{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 4rem;
+}
+.cart-img-block .buy{
+    position: absolute;
+    bottom: 170px;
+    left: 256px;
+}
+.remove{
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+    font-size: 2rem;
+    color: #858585;
+
+}
+.product-01 {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-01 .btn:hover{
+    background-color: #91D4C2;
+}

@@ -86,6 +86,7 @@ header .info{
     
 } 
 .sub-header .action{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,13 +102,9 @@ header .info{
 }
  
 
-/*--------------Lớp giả trên thanh navbar -------------- */
-
-
 /*--------------- DOT chuyển trang header --------------- */
 .dot{
     display: flex;
-    /* display: none; */
     gap: 7px;
     position: absolute;
     right: 20px;
@@ -192,12 +189,10 @@ header .info{
 
 }
 .best-seller .row{
-    width: 80%;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* background-color: red; */
 }
 .best-seller .info{
     width: 50%;
@@ -241,18 +236,14 @@ hr{margin-top: 30px;
     color: #020202;
 }
 .best-seller .desciption p{
+    width: 80%;
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.2;
     color: #6C6C6C;
 }
 
-.buy{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /* right: 390px; */
-}
+
 .buy button, .buy input{
     background: #FFFFFF;
     border: 1px solid #DFDFDF;  
@@ -389,7 +380,6 @@ input {
     background-color: #fff;
 }
 
-
 .background img {
         opacity: 1;
         transition: opacity 0.5s ease-in-out;
@@ -405,12 +395,11 @@ input {
     font-size: 2.6rem;
     line-height: 31px;
     color: #6C6C6C;
-    width: 100%;
-    
+    width: 20%;
     position: absolute;
-    top: 56px;
+    top: 60px; right: 170px;
     background-color: #D9D9D9;
-    /* border-radius: 3px; */
+
 }
 .form{
     width: 100%;
@@ -425,20 +414,23 @@ input {
     background-color: #D9D9D9;
     border: none;
     z-index: 10;
+
 }
-.input-text:focus {
-    outline: none;
+.input-text:focus{
+    outline-color: #ACE7D5;
+    outline-width: 4px;
 }
+
 
 .hidden{
     display: none;
 }
 .close{
     position: absolute;
-    top: 68px;
-    right: 31px;
+    top: 75px;
+    right: 180px;
     z-index: 11;
-    font-size: 2rem ;
+    font-size: 1.9rem ;
     color: #6C6C6C;
 }
 .close:hover{
@@ -477,8 +469,18 @@ input {
 }
 .action .hi:hover{
     text-decoration: none;
-    background-color: #ACE7D5;
+    background-color: #b4edde;
     border-radius: 10px;
+}
+
+/* ===================== ký hiệu giỏ hàng khi có hàng ======================== */
+.sign{
+    position: absolute;
+    background-color: rgb(224, 11, 11);
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    top: 1px;left: 71px;
 }
 
 

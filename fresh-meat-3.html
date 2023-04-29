@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
     <link rel="stylesheet" href="./css/fresh-meat.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header >
-        <div class="logo" id="logo_1"><a href="./index.html" class="GreenMart">GREENMART</a><e/div>
+        <div class="logo" id="logo_1"><a href="./index.html" class="GreenMart">GREENMART</a></div>
 
         <div class="sub-header" >
             <div class="navbar" id="navbar_1">
@@ -39,21 +39,16 @@
                 <div class="action">
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <!-- <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"> -->
                     <div class="click">
                         <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
                         <div class="profile hidden">
-                            <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
-                                <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
-                                <p class="name">ten tai khoan</p>
-                            </div>
-                            <hr style="margin-top: 5px;">
-                            <a href="./login.html" class="hi">
-                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
-                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
-                                    <p class="name">Log In</p>
+                            <a href="my-account.html">
+                                <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                    <p class="name">ten tai khoan</p>
                                 </div>
                             </a>
+                            
                             <hr style="margin-top: 5px;">
                             <a href="#" class="hi">
                                 <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
@@ -78,7 +73,6 @@
 
         </div>
     </header>
-    <script src="./JS/index.js"></script>
 
     <div class="product-01">
         <div class="row">
@@ -86,10 +80,8 @@
     
             <div class="info">
                 <p class="type">“Super premium” organic pork</p>
-                <div class="price">$45.23</div>
-    
+                <div class="price">$45.23/Pound</div>
                 <hr>
-    
                <div class="desciption">
                     <div class="desc">
                         <strong>ORIGIN</strong>
@@ -99,28 +91,20 @@
                         <strong class="strong1">DESCRIPTION</strong>
                         <p class="des">Pork ribs can be called as one of the most delicious dishes.
                         <br>
-
-                         Can be temporarily divided into young ribs and old ribs.</p>
+                         Can be temporarily divided into young ribs and old ribs.Our organic pork win rave reviews from our customers who love their tender, juicy texture and delicious flavor. Pan sear, then oven roast for the best results. </p>
                     </div>
                     <div class="desc">
                         <strong class="strong1">NUTRITION VALUE</strong>
                         <p class="nutrition-des">
-                            Protein and Fat <br>
-                            Iron and Zinc  <br>
-                            Vitamins B-12 and D</p>
+                            Protein and Fat <br></p>
                     </div>
                </div>
+               <!-- ADD TO CART -->
                <div class="buy">
-                <div for="quantity" class="quantity"> <strong>Input quantity:</strong> </div>
-                <input type="number" class="" name="quantity" value="0" min="" max="">
-                <div class="btn">ADD TO CART</div>
-           </div>
-
-               
+                    <div class="btn">ADD TO CART</div>
+                </div>
             </div>
-                
         </div>
-        
     </div>
 
 
@@ -155,6 +139,7 @@
         </div>
 </div>
 
+<script src="./JS/index.js"></script>
 
 
 </body>

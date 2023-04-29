@@ -1,7 +1,7 @@
 .content{
     margin: 0 130px;
 }
-.name{
+.name_text{
     text-align: center;
     margin-top: 132px;
 
@@ -30,6 +30,5 @@
     color: #6C6C6C;
 }
 .footer{
-    
     margin-top: 55px;
 }

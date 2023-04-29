@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
     <link rel="stylesheet" href="./css/fresh-meat.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header >
@@ -39,21 +39,16 @@
                 <div class="action">
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <!-- <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"> -->
                     <div class="click">
                         <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
                         <div class="profile hidden">
-                            <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
-                                <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
-                                <p class="name">ten tai khoan</p>
-                            </div>
-                            <hr style="margin-top: 5px;">
-                            <a href="./login.html" class="hi">
-                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
-                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
-                                    <p class="name">Log In</p>
+                            <a href="my-account.html">
+                                <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                    <p class="name">ten tai khoan</p>
                                 </div>
                             </a>
+                           
                             <hr style="margin-top: 5px;">
                             <a href="#" class="hi">
                                 <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
@@ -77,41 +72,40 @@
 
         </div>
     </header>
-    <script src="./JS/index.js"></script>
 
+    <h2 class="title">FRESH SEAFOOD</h2>
 
-    <h2 class="title">FRESH MEAT</h2>
     <div class="img-block">
         <!-- FRESH-SEAFOOD-1 -->
         <div class="block-01">
             <a href="./fresh-seafood-1.html">
-                <img src="./img/seafood1.svg" alt="">
+                <img src="./img/seafood1.png" alt="">
                 <h2 class="type">SALMON FILLET</h2>
-                <div class="price">$30.5</div>
+                <div class="price">$30.5/Pound</div>
             </a >
         </div>
         <!-- FRESH-SEAFOOD-2 -->
         <div class="block-02">
             <a href="./fresh-seafood-2.html">
-                <img src="./img/seafood2.svg" alt="">
+                <img src="./img/seafood2.png" alt="">
                 <h2 class="type">CANADIAN LOBSTER</h2>
-                <div class="price">$25.16   </div>
+                <div class="price">$25.16/Pound</div>
             </a>
         </div>
         <!-- FRESH-SEAFOOD-3 -->
         <div class="block-03">
             <a href="./fresh-seafood-3.html">
-                <img src="./img/seafood3.svg" alt="">
+                <img src="./img/seafood3.png" alt="">
                 <h2 class="type">Japanese Octopus i-Wakado</h2>
-                <div class="price">$33.75</div>
+                <div class="price">$33.75/Pound</div>
             </a>
         </div>
         <!-- FRESH-SEAFOOD-4 -->
         <div class="block-04">
             <a href="./fresh-seafood-4.html">
-                <img src="./img/seafood4.svg" alt="">
+                <img src="./img/seafood4.png" alt="">
                 <h2 class="type">Japanese oysters</h2>
-                <div class="price">$14.5</div>
+                <div class="price">$14.5/Pound</div>
             </a>
         </div>
         <!-- FRESH-SEAFOOD-5 -->
@@ -119,7 +113,7 @@
             <a href="./fresh-seafood-5.html">
                 <img src="./img/seafood5.svg" alt="">
                 <h2 class="type">TUNA</h2>
-                <div class="price">$25.29</div>
+                <div class="price">$25.29/Pound</div>
             </a>
         </div>
         <!-- FRESH-SEAFOOD-6-->
@@ -127,7 +121,7 @@
             <a href="./fresh-seafood-6.html">
                 <img src="./img/seafood6.svg" alt="">
                 <h2 class="type">KING CRAB</h2>
-                <div class="price">$53.48</div>
+                <div class="price">$53.48/Pound</div>
             </a>
         </div>
     </div>
@@ -163,7 +157,6 @@
         </div>
 </div>
 
-
-
+<script src="./JS/index.js"></script>
 </body>
 </html>

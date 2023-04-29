@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
     <link rel="stylesheet" href="./css/fresh-meat.css">
-
-
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
@@ -19,15 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
 
-
 </head>
 <body>
-    
-
     <header >
-
         <div class="logo" id="logo_1"><a href="./index.html" class="GreenMart">GREENMART</a></div>
-
         <div class="sub-header" >
             <div class="navbar" id="navbar_1">
                 <ul class="info">
@@ -46,7 +40,27 @@
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
                     <!-- <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"> -->
-                    
+                    <div class="click">
+                        <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
+                        <div class="profile hidden">
+                            <a href="my-account.html">
+                                <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                    <p class="name">ten tai khoan</p>
+                                </div>
+                            </a>
+                           
+                            <hr style="margin-top: 5px;">
+                            <a href="#" class="hi">
+                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
+                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
+                                    <p class="name">Log Out</p>
+                                </div>
+                            </a>
+                            <hr style="margin-top: 5px;">
+                                <p class="name name_click" style="text-align: center; font-size: 2.6rem;">close</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="input hidden ">
@@ -58,15 +72,15 @@
         </div>
     </header>
 
-
     <h2 class="title">FRESH MEAT</h2>
+
     <div class="img-block">
         <!-- FRESH-MEAT-1 -->
         <div class="block-01">
             <a href="./fresh-meat-1.html">
                 <img src="./img/meat1.svg" alt="">
                 <h2 class="type">KOBE BEEF</h2>
-                <div class="price">$349.99</div>
+                <div class="price">$99.99/Pound</div>
             </a >
         </div>
         <!-- FRESH-MEAT-2 -->
@@ -74,7 +88,7 @@
             <a href="./fresh-meat-2.html">
                 <img src="./img/meat2.svg" alt="">
                 <h2 class="type">WAGYU BEEF</h2>
-                <div class="price">$60.26</div>
+                <div class="price">$60.26/Pound</div>
             </a>
         </div>
         <!-- FRESH-MEAT-3 -->
@@ -82,7 +96,7 @@
             <a href="./fresh-meat-3.html">
                 <img src="./img/meat3.svg" alt="">
                 <h2 class="type">ORGANIC PORK</h2>
-                <div class="price">$45.23</div>
+                <div class="price">$45.23/Pound</div>
             </a>
         </div>
         <!-- FRESH-MEAT-4 -->
@@ -90,15 +104,15 @@
             <a href="./fresh-meat-4.html">
                 <img src="./img/meat4.svg" alt="">
                 <h2 class="type">PORK CHOP</h2>
-                <div class="price">$55.48</div>
+                <div class="price">$55.48/Pound</div>
             </a>
         </div>
         <!-- FRESH-MEAT-4 -->
         <div class="block-05">
             <a href="./fresh-meat-5.html">
                 <img src="./img/meat5.svg" alt="">
-                <h2 class="type">QUADRANT CHICKEN THIGHS</h2>
-                <div class="price">$10.55</div>
+                <h2 class="type">CHICKEN THIGHS</h2>
+                <div class="price">$10.55/Pound</div>
             </a>
         </div>
     </div>
@@ -134,8 +148,7 @@
         </div>
     
     </div>
+    
     <script src="./JS/index.js"></script>
-
-
 </body>
 </html>

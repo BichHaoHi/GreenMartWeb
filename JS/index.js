@@ -56,17 +56,25 @@ window.addEventListener('scroll', function() {
 
     var search  = document.querySelector('.icon-search')
     var inputhihi = document.querySelector('.input')
+    var inputhehe = document.querySelector('.input-text')
+
     var close = document.querySelector('.close')
     
     var logo = document.getElementById("logo_1").style;
     var navbar = document.getElementById("navbar_1").style
 
+    var click = document.querySelector('.click_icon')
+    var profile = document.querySelector('.profile')
+    var name_click = document.querySelector('.name_click')
+
     search.addEventListener('click' , function(){
 
-    inputhihi.classList.remove('hidden')
+      profile.classList.add('hidden')
+      inputhihi.classList.remove('hidden')
       close.classList.remove('hidden')
       navbar.backgroundColor="#dfdfdf";
       logo.backgroundColor = "#dfdfdf";
+      inputhehe.focus()
     })
 
     close.addEventListener('click', function(){
@@ -81,17 +89,27 @@ window.addEventListener('scroll', function() {
 
     
     // ===================== ICON LOGIN ========================
-    var click = document.querySelector('.click_icon')
-    var profile = document.querySelector('.profile')
-    var name_click = document.querySelector('.name_click')
+   
     
     click.addEventListener('click', function(){
       profile.classList.remove('hidden')
+      inputhihi.classList.add('hidden')
+      close.classList.add('hidden')
+      
     })
     name_click.addEventListener('click', function(){
       profile.classList.add('hidden')
+    
     })
 
+    // ===================== ký hiệu giỏ hàng khi có hàng ========================
+
+    // var sign = document.querySelector('.sign')
+    // var dot_click = document.querySelector('.dot_click')
+
+    // dot_click.addEventListener('click', function(){
+    //   sign.classList.remove('hidden')
+    // })
 
 
 

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
     <link rel="stylesheet" href="./css/fresh-meat.css">
-
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
@@ -39,21 +39,16 @@
                 <div class="action">
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <!-- <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"> -->
                     <div class="click">
                         <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
                         <div class="profile hidden">
-                            <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
-                                <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
-                                <p class="name">ten tai khoan</p>
-                            </div>
-                            <hr style="margin-top: 5px;">
-                            <a href="./login.html" class="hi">
-                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
-                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
-                                    <p class="name">Log In</p>
+                            <a href="my-account.html">
+                                <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                    <p class="name">ten tai khoan</p>
                                 </div>
                             </a>
+                            
                             <hr style="margin-top: 5px;">
                             <a href="#" class="hi">
                                 <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
@@ -78,7 +73,6 @@
 
         </div>
     </header>
-    <script src="./JS/index.js"></script>
 
     <div class="product-01">
         <div class="row">
@@ -104,19 +98,13 @@
                         <p class="nutrition-des">There are just 16 calories in a cup of cucumber with its peel (15 without). You will get about 4% of your daily potassium, 3% of your daily fiber and 4% of your daily vitamin C. They also "provide small amounts of vitamin K, vitamin C, magnesium, potassium, manganese and vitamin A</p>
                     </div>
                </div>
+               <!-- ADD TO CART -->
                <div class="buy">
-                <div for="quantity" class="quantity"> <strong>Input quantity:</strong> </div>
-                <input type="number" class="" name="quantity" value="0" min="" max="">
-                <div class="btn">ADD TO CART</div>
-           </div>
-
-               
+                    <div class="btn">ADD TO CART</div>
+                </div>
             </div>
-                
         </div>
-        
     </div>
-
 
     <div class="footer">        
         <div class="column">
@@ -147,9 +135,8 @@
                 <img src="./img/social_03.svg" alt="" class="social">
             </div>
         </div>
-</div>
+    </div>
 
-
-
+    <script src="./JS/index.js"></script>
 </body>
 </html>

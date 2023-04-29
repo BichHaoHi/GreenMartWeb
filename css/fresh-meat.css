@@ -82,9 +82,8 @@ hr{margin-top: 20px;
     margin-top: 10px;    
 }
 .buy{
-    position: absolute;
-    bottom: -100px;
-    left: -40px;
+    display: block;
+    margin-top: 20px;
 }
 .buy button, .buy input{
     background: #FFFFFF;
@@ -117,6 +116,7 @@ input {
 .product-01 .btn:hover{
     background-color:#DFDFDF;
 }
+
 .footer{
-    margin-top: 150px;
+    margin-top: 200px;
 }

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenMart</title>
-    <!-- <script src="./script.js"></script> -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
@@ -42,21 +42,16 @@
                 <div class="action">
                     <img src="./img/search.png" alt="" class="icon icon-search" style="border-radius: 50%;">
                     <img src="./img/cart.svg" alt="" class="icon">
-                    <!-- <a href="login.html"><img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;"></a> -->
                     <div class="click">
                         <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
                         <div class="profile hidden">
-                            <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
-                                <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
-                                <p class="name">ten tai khoan</p>
-                            </div>
-                            <hr style="margin-top: 5px;">
-                            <a href="./login.html" class="hi">
-                                <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
-                                    <img src="./img/hi.svg" alt="" class="icon login" style="border-radius: 50%; width: 30px; height: 30px;">
-                                    <p class="name">Log In</p>
+                            <a href="./my-account.html">
+                                <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
+                                    <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
+                                    <p class="name">ten tai khoan</p>
                                 </div>
                             </a>
+                            
                             <hr style="margin-top: 5px;">
                             <a href="#" class="hi">
                                 <div class="hi" style="display: flex; gap: 10px;  padding: 5px 0; padding-left: 7px;">
@@ -84,11 +79,11 @@
 
     <div class="hero" >
             <div class= "background">
-                <img src="./img/b1.jpg" class="ok" alt=""  >
-                <img src="./img/b2.jpg" class="ok" alt=""  >
-                <img src="./img/b3.jpg" class="ok" alt="" >
-                <img src="./img/b4.jpg" class="ok" alt="">
-                <img src="./img/b1.jpg" class="ok" alt="" >
+                <img src="./img/Background-00.svg" class="ok" alt=""  >
+                <img src="./img/Background-01.svg" class="ok" alt=""  >
+                <img src="./img/Background.jpg" class="ok" alt="">
+                <img src="./img/Background-03.svg" class="ok" alt="" >
+                <img src="./img/Background-04.jpg" class="ok" alt="" >
 
             </div>
             <div class="dot">
@@ -107,28 +102,28 @@
                 <div class="info-price">
                     <img src="./img/meat_01.svg" alt="">
                     <h2 class="type">KOBE BEEF</h2>
-                    <div class="price">$99.99</div>
+                    <div class="price">$99.99/Pound</div>
                 </div>
             </a>
             <a href="./fresh-meat-2.html">
                 <div class="info-price">
                     <img src="./img/meat_02.svg" alt="">
                     <h2 class="type">WAGYU BEEF</h2>
-                    <div class="price">$60.26</div>
+                    <div class="price">$60.26/Pound</div>
                 </div>
             </a>
             <a href="./fresh-meat-3.html">
                 <div class="info-price">
                     <img src="./img/meat_03.svg" alt="">
                     <h2 class="type">ORGANIC PORK</h2>
-                    <div class="price">$45.23</div>
+                    <div class="price">$45.23/Pound</div>
                 </div>
             </a>
             <a href="./fresh-meat-4.html">
                 <div class="info-price">
                     <img src="./img/meat_04.svg" alt="">
                     <h2 class="type">PORK CHOP</h2>
-                    <div class="price">$55.48</div>
+                    <div class="price">$55.48/Pound</div>
                 </div>
             </a>
         </div>
@@ -142,10 +137,8 @@
     
             <div class="info">
                 <p class="type">KOBE BEEF | A5 WAGYU BEEF RIBEYE STEAK</p>
-                <div class="price">$349.99</div>
-    
+                <div class="price">$99.99/Pound</div>
                 <hr>
-    
                <div class="desciption">
                     <div class="desc">
                         <strong>Product of Japan</strong>
@@ -162,14 +155,11 @@
                             Protein performs many important functions in your body, such as repairing and building tissues, and is found in every cell.</p>
                     </div>
                </div>
-               <div class="buy">
-                <div for="quantity" class="quantity"> <strong>Input quantity:</strong> </div>
-                <input type="number" class="" name="quantity" value="0" min="" max="">
-                <div class="btn">ADD TO CART</div>
-           </div>
-               
+               <!-- ADD TO CART -->
+               <div class="buy" style="margin-top: 20px;">
+                    <a href="./fresh-meat-1.html"><div class="btn">BUY IT</div></a>
+               </div>
             </div>
-                
         </div>
     </div>
 
@@ -177,17 +167,17 @@
         <div class="text">FEEDBACK</div>
         <div class="sub-feedback">
             <div class="img-block">
-                <img src="./img/ava_1.svg" alt="">
+                <img src="./img/ava_1.png" alt="">
                 <div class="desc">“They have all kinds of food at a good price,
                      the aisles are extremely narrow but no worries, the staff is very kind and helpful. just bring your shopping list and the staff will assist you in getting all the items you need.”</div>
             </div>
             <div class="img-block">
-                <img src="./img/ava_2.svg" alt="">
+                <img src="./img/ava_2.png" alt="">
                 <div class="desc">“Food here is very fresh,
                      there are always  committed to food safety for customers. So i feel secure when shopping here”</div>
             </div>
             <div class="img-block">
-                <img src="./img/ava_3.svg" alt="">
+                <img src="./img/ava_3.png" alt="">
                 <div class="desc">“It’s a small space but packed full of western goodies you just can’t fine anywhere else.”</div>
             </div>
             
@@ -225,11 +215,8 @@
                 </div>
             </div>
     </div>
+    
+    <script src="./JS/slideshow.js"></script>
     <script src="./JS/index.js"></script>
-    <!-- <script src="./JS/slideshow.js"></script> -->
-
-    
-    
-
 </body>
 </html>

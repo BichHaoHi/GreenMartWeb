@@ -7,7 +7,7 @@ var background = document.querySelectorAll('.background img');
       if (activeDot) {
         activeDot.classList.remove('active');
       }
-      background[0].src = "./img/b1.jpg"
+      background[0].src = "./img/Background-00.svg"
     dot[index].classList.add('active');
 
 
@@ -33,4 +33,4 @@ var background = document.querySelectorAll('.background img');
     updateImage();
     setInterval(() => {
         updateImage();
-    }, 2000);
+    }, 4000);
