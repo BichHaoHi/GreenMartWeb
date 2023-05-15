@@ -114,6 +114,7 @@
     }
    
    
+   
 
 
     </style>
@@ -181,23 +182,32 @@
                     <thead>
                       <tr class="name_column">
                         <th scope="col"></th>
-                        <th scope="col"></th>
                         <th scope="col">PRODUCT_NAME</th>
                         <th scope="col">INPUT _ QUANTITY</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><input type="checkbox" class="tick"></td>
                         <td scope="row"><img src="./img/meat1.svg" alt="" class="img"></td>
                         <td>KOBE BEEF</td>
-                        <td>  <input type="number" class="quantity_input" name="quantity" value="1" min="0" max=""></td>
+                        <td>
+                            <div class="buy">
+                                <button  onclick="decrease()">-</button>
+                                <input type="number" class="quantity_input" id="soluong" value="1" min="1" max="" readonly>
+                                <button  onclick="increase()">+</button>
+                            </div>
+                        </td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox" class="tick"></td>
                         <td scope="row"><img src="./img/meat2.svg" alt="" class="img"></td>
                         <td>WAYGU BEEF</td>
-                        <td>  <input type="number" class="quantity_input" name="quantity" value="1" min="0" max=""></td>
+                        <td>
+                            <div class="buy">
+                                <button  onclick="decrease()">-</button>
+                                <input type="number" class="quantity_input" id="soluong" value="1" min="1" max="" readonly>
+                                <button  onclick="increase()">+</button>
+                            </div>
+                        </td>
                       </tr>
                       
                       

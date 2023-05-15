@@ -112,22 +112,23 @@ window.addEventListener('scroll', function() {
     // })
 
         // ===================== khi giảm số lượng trong sp trong cart về 0 thì hiện chắc chắc xóa ko ? ========================
-        var modal_cart = document.querySelector('.modal_cart')
-        var quantity_input = document.querySelectorAll('.quantity_input');
-        quantity_input.forEach(function(input) {
-          input.addEventListener('change', function() {
-            var currentValue = parseInt(input.value);
-            if (currentValue === 0) {
-              modal_cart.classList.remove('hidden')
-            }
-          });
-        });
+        // var modal_cart = document.querySelector('.modal_cart')
+        // var quantity_input = document.querySelectorAll('.quantity_input');
+        // quantity_input.forEach(function(input) {
+        //   input.addEventListener('change', function() {
+        //     var currentValue = parseInt(input.value);
+        //     if (currentValue === 0) {
+        //       modal_cart.classList.remove('hidden')
+        //     }
+        //   });
+        // });
 
         // ===================== order completed========================
   var modal_complete = document.querySelector('.modal_complete')
   var checkout =document.querySelector('.checkout')
   var close_complete = document.querySelector('.close_complete')
   var content_table  = document.querySelector('.content_table')
+
   checkout.addEventListener('click', function(){
     modal_complete.classList.remove('hidden')
     content_table.classList.add('hidden')
@@ -137,6 +138,37 @@ window.addEventListener('scroll', function() {
     modal_complete.classList.add('hidden')
   })
         
+// ===================== tăng giảm số lượng mua ========================
+var modal_cart = document.querySelector('.modal_cart')
+var quantity_input = document.querySelectorAll('.quantity_input');
+function decrease() {
+  var soluong = document.getElementById("soluong");
+  if (parseInt(soluong.value) >=1) {
+    soluong.value = parseInt(soluong.value) - 1;
+
+    quantity_input.forEach(function(input) {
+        var currentValue = parseInt(input.value);
+        if (currentValue === 0) {
+          modal_cart.classList.remove('hidden')
+        
+      };
+    });
+  }
+}
+function increase() {
+  var soluong = document.getElementById("soluong");
+  if (parseInt(soluong.value) >=1) {
+    soluong.value = parseInt(soluong.value) + 1;
+
+    quantity_input.forEach(function(input) {
+        var currentValue = parseInt(input.value);
+        if (currentValue === 0) {
+          modal_cart.classList.remove('hidden')
+        
+      };
+    });
+  }
+}
 
 
 
