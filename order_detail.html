@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/fresh-meat.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,94 +16,99 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet"> 
     <style>
-        body{
-            background-color: #DFDFDF;
+        .img{
+        width: 100px;
+        height: 100px;
+    }
+    .my_order{
+            margin: 80px;
+            padding:  20px 40px;
+            border: 1px solid #aeaeae;
         }
-        .my_account{
-            margin-top: 70px;
-            font-family: 'Girassol';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            color:#AEAEAE;
-            text-align: center;
-        }
-        .infomation{
-            color: #000000;
-            font-family: 'Girassol';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 26px;
-            color:#000000;
-
-        }
-        .help{
+    .date{
+        margin-left: 20px;
+    }
+    .date_order{
             display: flex;
-            justify-content: space-between;
+            font-family: 'Arial';
+            font-size: 3rem;
+            font-style: italic;
+            margin-bottom: 30px;
         }
-        .helpp{
-            font-size: 20px;
-            padding: 10px 20px;
-            background-color: #fff;
-            border: 1px solid #858585;
-        }
-        .content{
-            margin: 21px 41px;
-            padding: 32px 44px;
-            background-color: #fff;
-            border-radius: 10px;
-        }
-        .a{
-            margin-top: 20px;
-        }
-        .b{
+        
+        .item{
+            display: flex;
             font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 31px;
-
-        color: #000000;
+            font-weight: 700;
+            font-size: 3rem;
+            padding: 30px  ;
+            border-bottom: 1px solid #aeaeae;
         }
-        .phone_birth_account{
+        .soluong, .gia{
+            font-size: 2rem;
+        }
+        .gia{
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #aeaeae;
+        }
+        .tensoluong{
+            margin-left: 20px;
+            font-family: 'Girassol';
+            color: #625f5f;
+        }
+        .total{
+            font-family: 'Inter';
+            margin-top: 30px;
+            font-size: 3rem;
             display: flex;
-            gap: 50px;
+            justify-content: right;
+            align-items: center;
+        }
+        .node{
+            margin-top: 20px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 20px;
+
         }
         input{
-            width: 100%;
             height: 50px;
-            background: #FFFFFF;
-            border: 1px solid #AEAEAE;
-            border-radius: 10px;
+            width: 200px;
+            font-size: 2.5rem;
+            font-family: 'Inter';
+
         }
-        .button{
-            padding: 10px 20px;
-            display: block;
-            margin-left: auto;
+        input:hover{
+            background-image: linear-gradient(rgb(111, 197, 174), rgba(132, 206, 186, 0.373), rgba(145, 212, 194, 0));
+            border: #aeaeae;
+
         }
-        .button:hover{
-            cursor: pointer;
+        .address{
+            width: 70%;
+            font-family: 'Inter';
+            font-size: 2rem;
+            margin-top: 20px;
         }
-        .footer{
-            margin-top: 100px;
+        .max_item{
+            max-height: 300px;
+            overflow-y: auto;
         }
 
+       
     </style>
 </head>
 <body>
-
     <header >
-        <div class="logo" id="logo_1"><a href="#" class="GreenMart">GREENMART</a></div>
+        <div class="logo" id="logo_1"><a href="./index.html" class="GreenMart">GREENMART</a></div>
+
         <div class="sub-header" >
             <div class="navbar" id="navbar_1">
                 <ul class="info">
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="./index.html">HOME</a></li>
                         <li><a href="./about-us.html">ABOUT US</a></li>
                 </ul>
                 <ul class="products">
@@ -110,7 +116,7 @@
                     <li><a href="./fresh-seafood.html">FRESH SEAFOOD</a></li>
                     <li><a href="./eggs.html">DIARY & EGGS</a></li>
                     <li><a href="./fresh-fruit.html">FRESH FRUIT</a></li>
-                    <li><a href="../vegetables.html">VEGETABLES</a></li>
+                    <li><a href="./vegetables.html">VEGETABLES</a></li>
                 </ul> 
         
                 <div class="action">
@@ -119,10 +125,10 @@
                     <div class="click">
                         <img src="./img/login.png" alt="" class="icon login click_icon" style="border-radius: 50%;">
                         <div class="profile hidden">
-                            <a href="my-account.html">
+                            <a href="./my-account.html">
                                 <div class="hi" style="display: flex; gap: 10px; padding: 5px 0;">
                                     <img src="./img/login.png" alt="" class="icon login" style="border-radius: 50%;">
-                                    <p class="name">tai khoan</p>
+                                    <p class="name">ten tai khoan</p>
                                 </div>
                             </a>
                             <a href="./my-account.html">
@@ -150,7 +156,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- THANH SEARCH -->
             <div class="input hidden">
                 <form action="" class="form">
@@ -161,48 +166,62 @@
 
         </div>
     </header>
-    <div class="block">
-        <div>
-            <p class="my_account">MY ACCOUNT</p>
-
+<body>
+      <h2 class="title" style="font-weight: 600; color: #000000;">ORDER DETAILS</h2>
+    <div class="my_order">
+        <div class="date_order"> 
+            <b style="font-weight: 600;">Order Date: </b>
+            <div class="date">03-Nov-2022</div>
         </div>
-        <div class="content">
-            <div class="help">
-                <p class="infomation">INFORMATION</p>
-                <p class="helpp">? HELP</p>
+        <div class="max_item">
+            <div class="item">
+                <img src="./img/meat1.svg" alt="" class="img">
+                <div class="tensoluong">
+                    <p>KOBE BEEF</p>
+                    <div class="soluong"><span>x </span> 2 </div>
+                    <div class="gia"><span class="tong" style="margin-right: 9px;">Total: </span> 222 <span>USD </span> </div>
+                </div>
             </div>
-            <hr>
+            <div class="item">
+                <img src="./img/vege1.svg" alt="" class="img">
+                <div class="tensoluong">
+                    <p>KOBE BEEF</p>
+                    <div class="soluong"><span>x </span> 1 </div>
+                    <div class="gia"><span class="tong" style="margin-right: 9px;">Total: </span> 222 <span>USD </span> </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/vege4.svg" alt="" class="img">
+                <div class="tensoluong">
+                    <p>KOBE BEEF</p>
+                    <div class="soluong"><span>x </span> 1 </div>
+                    <div class="gia"><span class="tong" style="margin-right: 9px;">Total: </span> 222 <span>USD </span> </div>
+                </div>
+            </div>
             
-            <div class="info_account">
-                <div class="name_account a">
-                    <p class="b">Name *</p>
-                    <input type="text">
-                </div>
-                <div class="phone_birth_account a">
-                    <div class="phone_account">
-                        <p class="b">Phone *</p>
-                        <input type="text">
-                    </div>
-                    <div class="birthday_account">
-                        <p class="b">BirthDay *</p>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="email_account a">
-                    <p class="b">Email <strong style="font-weight: 600;">(No update)</strong> *</p>
-                    <input type="text">
-                </div>
-                <div class="address_account a">
-                    <p class="b">Address *</p>
-                    <input type="text">
-                </div>
-                <button type="button" class=" button a">UPDATE</button>
-
-            </div>
         </div>
+        <div class="address">
+            <b style="font-weight: 550;">Delivery Address: </b>
+            <span>124 Thanh Thai Quan 10 TPHCM Lorem ipsum dolor sit, amet consectelorem10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, velit.
+                tur adipisicing elit. Rerum, nemo?</span>
+        </div>   
+        <div class="total">
+            <b style="font-weight: 600; font-size: 3.5rem; margin-right: 10px;" >TOTAL: </b>
+            <span style="color: #625f5f; font-weight: 700; font-size: 3.8rem;margin-right: 10px;">18 </span>
+            <span style="color: #625f5f;font-weight: 600; font-size: 3.8rem;"> $</span>
+        </div>
+        <div class="node">
+            <a href="./feedback.html"><input type="submit" value="Feedback"></a>
+            <a href="#!"><input type="submit" value="Buy Again"></a>
 
 
+        </div>
     </div>
+ 
+    
+    
+
+
     <div class="footer">        
         <div class="column">
             <div class="foot_01">
@@ -232,6 +251,8 @@
                 <img src="./img/social_03.svg" alt="" class="social">
             </div>
         </div>
-</div>
+    </div>
+    
     <script src="./JS/index.js"></script>
 </body>
+</html>
