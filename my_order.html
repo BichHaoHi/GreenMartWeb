@@ -100,47 +100,127 @@
         .max_item{
             max-height: 300px;
             overflow-y: auto;
+            margin-top: 130px;
         }
         .timeline {
         position: relative;
         }
         .line {
-            width: 100px;
+            width: 125px;
             position: absolute;
             right: 740px;
-            top: -42px;
-            height: 2px;
-            background-color: #000;
+            top: 6px;
+            height: 5px;
+            background-color: #6FC5AE;
             transform: translateY(-50%);
         }
         .dot{
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            background-color: blue;
-            right: 839px;
-            top: -57px;
+            background-color: #6FC5AE;   
+            right: 864px;
+            top: -12px;
+            font-size: 2.9rem;
+            display: block;
+            text-align: center;
+            padding-top:4px ;
+            color: #fff;
             
         }
-        .line_1{
-            width: 100px;
+        .line_1 {
+            width: 125px;
             position: absolute;
-            right: 740px;
-            top: 41px;
-            height: 2px;
-            background-color: #000;
+            right: 583px;
+            top: 6px;
+            height: 5px;
+            background-color: #aeaeae;
             transform: translateY(-50%);
         }
         .dot_1{
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            background-color: blue;
-            right: 839px;
-            top: 50px;
+            background-color: #6FC5AE;
+            right: 706px;
+            top: -12px; 
+            font-size: 2.9rem;
+            display: block;
+            text-align: center;
+            padding-top:4px ;
+            color: #fff;
 
+        }
+        .line_2 {
+            width: 125px;
+            position: absolute;
+            right: 426px;
+            top: 6px;
+            height: 5px;
+            background-color: #aeaeae;
+            transform: translateY(-50%);
+        }
+        .dot_2{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #aeaeae;
+            right: 548px;
+            top: -12px; 
+            font-size: 2.9rem;
+            display: block;
+            text-align: center;
+            padding-top:4px ;
+            color: #fff;
+        }
+        .dot_3{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #aeaeae;
+            right: 390px;
+            top: -12px; 
+            font-size: 2.9rem;
+            display: block;
+            text-align: center;
+            padding-top:4px ;
+            color: #fff;
+        }
+        .status{
+            position:absolute ;
+            right: 848px;
+            top: 36px;
+            font-size: 2.5rem;
+            color: #625f5f;
+            font-family: Inter;
+        }
+        .status_1{
+            position:absolute ;
+            right: 664px;
+            top: 36px;
+            font-size: 2.5rem;
+            color: #625f5f;
+            font-family: Inter;
+        }
+        .status_2{
+            position:absolute ;
+            right: 510px;
+            top: 36px;
+            font-size: 2.5rem;
+            color: #625f5f;
+            font-family: Inter;
+        }
+        .status_3{
+            position:absolute ;
+            right: 340px;
+            top: 36px;
+            font-size: 2.5rem;
+            color: #625f5f;
+            font-family: Inter;
         }
         
 
@@ -221,12 +301,25 @@
         <div class="hmm">
             <div class="timeline">
                 <div class="line"></div>
-                <div class="dot"></div>
+                <div class="dot">&#10004;</div>
+                <div class="status">Ordered</div>
             </div>
             <div class="timeline">
                 <div class="line_1"></div>
-                <div class="dot_1"></div>
+                <div class="dot_1">&#10004;</div>
+                <div class="status_1">Preparing</div>
             </div>
+            <div class="timeline">
+                <div class="line_2"></div>
+                <div class="dot_2">&#10004;</div>
+                <div class="status_2">Shipping</div>
+            </div>
+            <div class="timeline">
+                <div class="dot_3">&#10004;</div>
+                <div class="status_3">Delivered</div>
+            </div>
+            
+
         </div>
           
         
@@ -271,6 +364,7 @@
             <div class="node">
                 <a href="./order_detail.html"><input type="submit" value="Received"></a>
             </div>
+
        
         
     </div>
